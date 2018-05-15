@@ -10,10 +10,10 @@ public class Ex2_1_3 {
 
     /**
      * Invariant: no index k < i so that A[k] = v.
-     * - Before the loop i = 0 so there's no index k < i that A[k] = v trivially as there's no index.
-     * - In order to precede to the next iteration of the loop, we need that for the current value of i,
+     * - Before the loop: i = 0 so there's no index k < i that A[k] = v trivially as there's no index.
+     * - Maintenance: In order to precede to the next iteration of the loop, we need that for the current value of i,
      * we do not have A[i] = v.
-     * If the loop is exited after the if, then we have just placed an acceptable value in i
+     * - Termination: If the loop is exited after the if, then we have just placed an acceptable value in i
      * on the previous line. If the loop is exited by exhausting all possible values of i,
      * then we know that there is no index that has value i, and so null is correct.
      */
