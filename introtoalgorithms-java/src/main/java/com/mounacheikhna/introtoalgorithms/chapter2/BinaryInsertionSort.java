@@ -1,4 +1,4 @@
-package com.mounacheikhna.introtoalgorithms.chapter1;
+package com.mounacheikhna.introtoalgorithms.chapter2;
 
 public class BinaryInsertionSort {
 
