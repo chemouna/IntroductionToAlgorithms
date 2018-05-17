@@ -44,3 +44,11 @@ because after picking the n-1 smallest elements the only element left is the lar
 - the best-case and worst-case running times of selection sort
 the best case and the worst case are O(n^2)
 
+## 2.2-3
+- On average, half the the elements in array A will be checked before v is found in it. And in the worst case
+(v is not present in A), all the elements needs to be checked.
+So, the running time in both cases is Θ(n).
+
+## 2.2-4
+modify it to handle the best-case efficiently. For example, if we modify merge-sort to check if the array is sorted
+and just return it, the best-case running time will be Θ(n).
