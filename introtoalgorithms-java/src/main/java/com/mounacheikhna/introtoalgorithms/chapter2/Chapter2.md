@@ -52,3 +52,12 @@ So, the running time in both cases is Θ(n).
 ## 2.2-4
 modify it to handle the best-case efficiently. For example, if we modify merge-sort to check if the array is sorted
 and just return it, the best-case running time will be Θ(n).
+
+## Ex 2.3-4
+the recurrence if T(n) = O(1) if n = 1 and T(n) = T(n - 1) + O(n) if n > 1
+and the solution to that recurrence is O(n^2)
+
+## Ex 2.3-5
+We will keep dividing the array size each time by 2 until either the element is found or we get to an array of size one
+which is the worst case and that will the number of times to divide n by 2 until we get to one , which is log n
+
