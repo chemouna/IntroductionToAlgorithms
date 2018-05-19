@@ -59,5 +59,14 @@ and the solution to that recurrence is O(n^2)
 
 ## Ex 2.3-5
 We will keep dividing the array size each time by 2 until either the element is found or we get to an array of size one
-which is the worst case and that will the number of times to divide n by 2 until we get to one , which is log n
+and the element is not found which is the worst case and that will the number of times to divide n by 2 until we get to
+one , which is log n. (the running time T(n)= T((n−1)/2) + Θ(1) = Θ(lgn) )
+
+## Ex 2.3-6
+Insertion sort does two things:
+- A linear search to scan (backward) through the sorted sub-array to find the proper position for key.
+- Shift the elements greater than key towards the end to insert key in the proper position.
+Although we can reduce the number of comparisons by using binary search to accomplish 1/, we still need to shift
+all the elements greater than key towards the end of the array to insert key. And this shifting of elements runs
+at Θ(n) time. So, the overall worst-case running time of insertion sort will still be Θ(n^2).
 
