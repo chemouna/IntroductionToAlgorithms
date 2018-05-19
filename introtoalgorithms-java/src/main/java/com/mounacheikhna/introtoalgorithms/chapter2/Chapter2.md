@@ -70,3 +70,9 @@ Although we can reduce the number of comparisons by using binary search to accom
 all the elements greater than key towards the end of the array to insert key. And this shifting of elements runs
 at Θ(n) time. So, the overall worst-case running time of insertion sort will still be Θ(n^2).
 
+## Ex 2.3-7
+first sort the array then iterate through it and for each element val do a binary search for x - val to find it
+and the running time will be O(n log n) for sorting and O(n log n) for binary search for each element so total
+running time is O(n log n)
+
+(See https://atekihcan.github.io/CLRS/E02.03-07/)
