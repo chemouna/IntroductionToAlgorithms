@@ -76,3 +76,19 @@ and the running time will be O(n log n) for sorting and O(n log n) for binary se
 running time is O(n log n)
 
 (See https://atekihcan.github.io/CLRS/E02.03-07/)
+
+## Problem 2.1
+a. For input of size k, insertion sort runs on Θ(k^2) worst-case time but specifically O(a k^2 + bk + c) so for n/k
+sublists its n/k . O(a k^2 + bk + c) so othe dominant term is O(nk).
+
+b. We have n elements divided into n/k sorted sublists each of length k. To merge these n/k sorted sublists to get a
+single sorted list of length n, we have to take 2 sublists at a time and continue to merge them, so that is log(n/k)
+steps, and in every step, we are comparing n elements, so the overall running time is Θ(n lg(n/k)).
+
+c. For the modified algorithm to have the  running time Θ(nk + nlg(n/k)) = Θ(nk + nlgn − nlgk) must be same as Θ(nlgn).
+   To satisfy this, k cannot grow faster than lg n.
+   so let's take k = O(lg n)
+   O(nk + n lg n - n lg k) = O(nlg n + n lg n - n lg lg n) = O(2n lg n - n lg lg n) ~ O(n lg n)
+
+d. in practice because of the constant factors its better to run tests and determine the best k to choose from the
+results (i.e find out at which k insertion sort starts beating merge sort in speed).
