@@ -121,8 +121,17 @@ c. see http://cs.txstate.edu/~ch04/webtest/teaching/courses/5329/lectures/horner
 d. the invariants proved in c/ showed that the algorithms computs the sum corresponding to the value of the polynomial
 computed at x
 
+## Problem 2.4
+a. (2, 1), (3, 1), (8, 6), (8, 1), and (6, 1).
 
+b. the array with all elements in reverse order, has (n - 1) + (n - 2) + ... + 2 + 1 = n (n - 1) / 2 inversions
 
+c. running time of insertion sort is a constant times the number of inversions, The reason being more inversions means
+most of the array is reverse sorted, i.e. more swaps to perform in the while loop. So, the higher the number of
+inversions in an array, the longer insertion sort will take to sort the array.
+
+d. recursively divide the array into halves and count number of inversions in the sub-arrays. This will result in lg n
+steps and Θ(n) operations in each step to count the inversions. All in all a Θ(n lg n) algorithm.
 
 
 
