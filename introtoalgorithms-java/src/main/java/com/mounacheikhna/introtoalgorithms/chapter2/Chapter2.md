@@ -92,3 +92,34 @@ c. For the modified algorithm to have the  running time Θ(nk + nlg(n/k)) = Θ(n
 
 d. in practice because of the constant factors its better to run tests and determine the best k to choose from the
 results (i.e find out at which k insertion sort starts beating merge sort in speed).
+
+## Problem 2.2
+a. We need to prove that A' contains all the elements originally in A which is true since all we do is swapping the
+elements.
+
+b & c. (see https://bradyt.com/clrs/ch2_p/)
+
+d. O(n^2) , the same as insertion sort , however, bubble sort also has best-case running time Θ(n^2) whereas insertion
+sort has best-case running time Θ(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
