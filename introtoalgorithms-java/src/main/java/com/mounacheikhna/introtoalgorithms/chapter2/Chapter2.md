@@ -133,6 +133,32 @@ inversions in an array, the longer insertion sort will take to sort the array.
 d. recursively divide the array into halves and count number of inversions in the sub-arrays. This will result in lg n
 steps and Θ(n) operations in each step to count the inversions. All in all a Θ(n lg n) algorithm.
 
+merge-and-count(A,B)
+  ;  A,B two input lists (sorted)
+  ;  C  output list
+  ;  i,j current pointers to each list, start at beginning
+  ;  a_i, b_j elements pointed by i, j
+  ;  count number of inversion, initially 0
+
+  while A,B != empty
+    append min(a_i,b_j) to C
+    if b_j < a_i
+       count += number of element remaining in A
+       j++
+    else
+       i++
+  ; now one list is empty
+  append the remainder of the list to C
+  return count, C
+
+sort-and-count(L)
+  if L has one element return 0
+  else
+     divide L into A, B
+     (rA, A) = sort-and-count(A)
+     (rB, B) = sort-and-count(B)
+     (r, L) = merge-and-count(A,B)
+  return r = rA+rB+r, L
 
 
 
