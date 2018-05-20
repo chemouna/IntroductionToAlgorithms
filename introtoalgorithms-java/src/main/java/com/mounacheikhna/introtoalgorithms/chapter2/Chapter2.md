@@ -102,6 +102,25 @@ b & c. (see https://bradyt.com/clrs/ch2_p/)
 d. O(n^2) , the same as insertion sort , however, bubble sort also has best-case running time Θ(n^2) whereas insertion
 sort has best-case running time Θ(n)
 
+## Problem 2.3
+a. O(n)
+b.
+ y = 0
+ for i=0 to n do
+   yi = x
+   for j=1 to n do
+     yi = yi * x
+   end for
+   y = y + ai * yi
+ end for
+
+ running time for it is O(n^2) so its slower than Horner's rule
+
+c. see http://cs.txstate.edu/~ch04/webtest/teaching/courses/5329/lectures/horner.pdf
+
+d. the invariants proved in c/ showed that the algorithms computs the sum corresponding to the value of the polynomial
+computed at x
+
 
 
 
