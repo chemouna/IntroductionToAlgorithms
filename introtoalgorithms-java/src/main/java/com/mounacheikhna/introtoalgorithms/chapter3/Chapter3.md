@@ -28,4 +28,24 @@ We need to show that there exists c1, c2 and n0 > 0 s.t
 another way to show it with https://atekihcan.github.io/CLRS/E03.01-02/
 
 ## Ex 3.1-3
+O(n^2) provides an upper bound; the "at least" negates the upper bound, so it is meaningless.
+
+also There are a ton of different functions that have growth rate less than or equal
+to n^2, for ex. functions that are constant or shrink to zero arbitrarily fast. Saying that a function grows more
+quickly than a function that shrinks to zero quickly tells us nothing.
+
+## Ex 3.1-4
+Is 2^(n+1) = O(2^n) ?
+for that to be true => there exists c s.t 2^n <= c * 2^n which is true for c = 2
+
+Is 2^(2n) = O(2^n) ?
+for that to be true => there exists c s.t 2^(2n) <= c * 2^n but such c does not exist
+because If there a c, such that 0 ≤ 2^n⋅2^n≤ c⋅2n, then c ≥ 2n. But this is not possible for any arbitrarily large
+value of n.
+so 2^(2n) is not = O(2^n)
+
+
+
+
+
 
