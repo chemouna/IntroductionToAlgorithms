@@ -61,5 +61,9 @@ running time of the algorithm is O(n).
 And as 0 ≤ c1 g(n) ≤ T(n) for n≥n0, T(n) = Ω(g(n)), i.e. T(n) is lower bounded by Ω(n). In other words, best-case
 running time of the algorithm is Ω(n).
 
+## Ex 3.1-7
+o(g(n)) ∩ ω(g(n)) is the set of functions f(n) such that 0 ≤ c2g(n) < f(n) < c1g(n). Now, this inequality cannot be
+true asymptotically as n becomes very large, f(n) cannot be simultaneously greater than c2 g(n) and less than c1 g(n)
+for any constants c1, c2 >0. Hence, no such f(n) exists.
 
 
