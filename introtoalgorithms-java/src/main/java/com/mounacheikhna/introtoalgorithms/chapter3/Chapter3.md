@@ -44,8 +44,13 @@ because If there a c, such that 0 ≤ 2^n⋅2^n≤ c⋅2n, then c ≥ 2n. But th
 value of n.
 so 2^(2n) is not = O(2^n)
 
+## Ex 3.1-5
+To prove this theorem, we need to show the logic holds both ways.
+If f(n)=Θ(g(n)), then 0≤c1g(n)≤f(n)≤c2g(n) for n≥n0. As 0≤f(n)≤c2g(n) for n≥n0, f(n)=O(g(n)).
+And as 0≤c1g(n)≤f(n) for n≥n0, f(n)=Ω(g(n)).
 
-
-
+Now we need to prove the other way around.
+If f(n)=Ω(g(n)), then 0≤c1g(n)≤f(n) for n≥n1. And if f(n)=O(g(n)), then 0≤f(n)≤c2g(n) for n≥n2.
+Combining the above two inequalities, we can say 0≤c1g(n)≤f(n) for n≥max(n1,n2), i.e. f(n)=Θ(g(n)).
 
 
