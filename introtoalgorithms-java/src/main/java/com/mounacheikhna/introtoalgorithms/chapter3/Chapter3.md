@@ -66,4 +66,10 @@ o(g(n)) ∩ ω(g(n)) is the set of functions f(n) such that 0 ≤ c2g(n) < f(n) 
 true asymptotically as n becomes very large, f(n) cannot be simultaneously greater than c2 g(n) and less than c1 g(n)
 for any constants c1, c2 >0. Hence, no such f(n) exists.
 
+## Ex 3.1-8
+Ω(g(n,m)) = { f(n,m) : there exist positive constants c,n0, and m0 such that 0≤cg(n,m)≤f(n,m) for all n≥n0 and m≥m0 }
+
+Θ(g(n,m)) = { f(n,m) : there exist positive constants c1,c2,n0, and m0 such that 0≤c1g(n,m)≤f(n,m)≤c2g(n,m)
+    for all n≥n0 and m≥m0
+
 
