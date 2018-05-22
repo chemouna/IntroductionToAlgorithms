@@ -53,4 +53,13 @@ Now we need to prove the other way around.
 If f(n)=Ω(g(n)), then 0≤c1g(n)≤f(n) for n≥n1. And if f(n)=O(g(n)), then 0≤f(n)≤c2g(n) for n≥n2.
 Combining the above two inequalities, we can say 0≤c1g(n)≤f(n) for n≥max(n1,n2), i.e. f(n)=Θ(g(n)).
 
+## Ex 3.1-6
+Let’s assume that the running time of the algorithm is T(n). If T(n)=Θ(g(n)), then 0≤c1g(n)≤T(n)≤c2g(n) for n≥n0.
+As 0 ≤ T(n) ≤ c2 g(n) for n ≥ n0, T(n) = O(g(n)), i.e. T(n) is upper bounded by O(n). In other words, worst-case
+running time of the algorithm is O(n).
+
+And as 0 ≤ c1 g(n) ≤ T(n) for n≥n0, T(n) = Ω(g(n)), i.e. T(n) is lower bounded by Ω(n). In other words, best-case
+running time of the algorithm is Ω(n).
+
+
 
