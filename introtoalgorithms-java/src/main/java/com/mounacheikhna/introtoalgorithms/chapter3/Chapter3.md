@@ -80,10 +80,17 @@ f(n) and g(n) are monotonically increasing : if m < n then f(m) < f(n)  and g(m)
 if m < n then g(m) < g(n) and since f is monotonically increasing  => f(g(m)) < f(g(n)) =>  f(g(n)) is  monotonically
 increasing.
 
-- if f(n) and g(n) are nonnegative
+- if f(n) and g(n) are non negative
 since f(n) and g(n) are monotonically increasing : if m < n then f(m) < f(n)  and g(m) < g(n)
 then f(m) ⋅ g(m) ≤ f(n)⋅g(n)
 => f(n)⋅g(n) is monotonically increasing.
+
+## Ex 3.2-2
+see https://atekihcan.github.io/CLRS/E03.02-02/
+
+## Ex 3.2-3
+- using Stirling approximation (see https://ita.skanev.com/03/02/03.html)
+
 
 
 
