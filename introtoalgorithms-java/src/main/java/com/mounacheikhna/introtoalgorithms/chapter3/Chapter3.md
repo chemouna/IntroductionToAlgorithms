@@ -72,4 +72,18 @@ for any constants c1, c2 >0. Hence, no such f(n) exists.
 Θ(g(n,m)) = { f(n,m) : there exist positive constants c1,c2,n0, and m0 such that 0≤c1g(n,m)≤f(n,m)≤c2g(n,m)
     for all n≥n0 and m≥m0
 
+## Ex 3.2-1
+- Show that if f(n) and g(n) are monotonically increasing functions, then so are the functions f(n) + g(n) and f(g(n))
+f(n) and g(n) are monotonically increasing : if m < n then f(m) < f(n)  and g(m) < g(n)
+=> f(m) + g(m) < f(n) + g(n) => f(n) + g(n) is monotonically increasing.
+
+if m < n then g(m) < g(n) and since f is monotonically increasing  => f(g(m)) < f(g(n)) =>  f(g(n)) is  monotonically
+increasing.
+
+- if f(n) and g(n) are nonnegative
+since f(n) and g(n) are monotonically increasing : if m < n then f(m) < f(n)  and g(m) < g(n)
+then f(m) ⋅ g(m) ≤ f(n)⋅g(n)
+=> f(n)⋅g(n) is monotonically increasing.
+
+
 
